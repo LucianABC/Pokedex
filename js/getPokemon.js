@@ -2,18 +2,16 @@ try {
     const variables = require("./variables.js");
     const baseUrl= variables.baseUrl;
     const handleError = variables.handleError;
+    const capitalizeFirstLetter = variables.capitalizeFirstLetter;
 
 }catch(e){}
 
 const input = document.querySelector("#pkm-search-input");
 
-let pokeId;
-let pokeName;
-let pokeImg;
-
-
 const getPkm = async() => {
-    const id= input.value;
+    let id= input.value;
+    id = id.toLowerCase();
+
     try {
         let pokemon = await axios.get(`${baseUrl}/${id}`);
         return pokemon.data       
@@ -29,17 +27,20 @@ const displayPkm = async () =>{
     img.setAttribute("src", pokemon.sprites.front_default);
 
     const nameSpan = document.querySelector("#pkm-id-name");
-    nameSpan.innerHTML = `${pokemon.id} - ${pokemon.name}`;
+    let pokemonName = capitalizeFirstLetter(pokemon.name);
+    nameSpan.innerHTML = `${pokemon.id} - ${pokemonName}`;
 
     const mainAbilitySpan = document.querySelector("#pkm-ability");
-    mainAbilitySpan.innerHTML=pokemon.abilities[0].ability.name;
+    let ability = capitalizeFirstLetter(pokemon.abilities[0].ability.name);
+    mainAbilitySpan.innerHTML=ability;
 
     const typesDiv = document.querySelector("#pkm-types");
     const types = pokemon.types;
 
     for (let type of types) {
         let span = document.createElement("span");
-        span.innerHTML = type.type.name;
+        let typeName = capitalizeFirstLetter(type.type.name);
+        span.innerHTML = typeName;
         span.classList.add(`type-${type.type.name}`);
         typesDiv.appendChild(span);
     }

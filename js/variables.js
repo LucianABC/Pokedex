@@ -14,10 +14,15 @@ const getAllPokemon = async () => {
     }
 }
 
+const capitalizeFirstLetter = (string) => {
+    return string.charAt(0).toUpperCase() + string.slice(1);
+}
+
 
 try {
     module.exports = {
         baseUrl,
-        handleError
+        handleError,
+        capitalizeFirstLetter
     }
 }catch(e){}
