@@ -1,13 +1,13 @@
 try {
-    const variables = require("./variables.js");
-    const baseUrl= variables.baseUrl;
-    const handleError = variables.handleError;
-    const capitalizeFirstLetter = variables.capitalizeFirstLetter;
+    const constantes = require("./constantes.js");
+    const baseUrl= constantes.baseUrl;
+    const handleError = constantes.handleError;
+    const capitalizeFirstLetter = constantes.capitalizeFirstLetter;
 
 }catch(e){}
 
 const input = document.querySelector("#pkm-search-input");
-
+//-------------------- Get pokemon from API
 const getPkm = async() => {
     let id= input.value;
     id = id.toLowerCase();
@@ -19,7 +19,7 @@ const getPkm = async() => {
         handleError
     }
 }
-
+//---------------------- Display in html
 const displayPkm = async () =>{
     let pokemon = await getPkm();
 
@@ -36,7 +36,6 @@ const displayPkm = async () =>{
 
     const typesDiv = document.querySelector("#pkm-types");
     const types = pokemon.types;
-
     for (let type of types) {
         let span = document.createElement("span");
         let typeName = capitalizeFirstLetter(type.type.name);
@@ -44,9 +43,25 @@ const displayPkm = async () =>{
         span.classList.add(`type-${type.type.name}`);
         typesDiv.appendChild(span);
     }
-
 }
 
 const submitSearch = document.querySelector("#submit-bttn");
-
 submitSearch.addEventListener("click", displayPkm);
+
+
+//--------------------------- Random pokemon
+const randomize = () => {
+    input.value = Math.floor(Math.random() * 964) + 1;
+    displayPkm();
+}
+
+const randomBttn = document.querySelector("#random-bttn");
+randomBttn.addEventListener("click", randomize);
+
+
+try {
+    module.exports = {
+        displayPkm,
+        input
+    }
+}catch(err){}
