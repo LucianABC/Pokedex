@@ -1,0 +1,29 @@
+@import 'variables';
+
+
+body {
+    font-family: 'Press Start 2P', cursive;
+}
+
+#navBar {
+    display: flex;
+    color: white;
+    background-color: $fondonav;
+}
+
+.pkdx-section {
+    display: flex;
+    justify-content: center;
+    background-color: $skyblue;
+}
+.pkm-img-card {
+    border: 1px solid black;
+    margin: 10px;
+
+}
+.pkm-info-card {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
