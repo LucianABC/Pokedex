@@ -20,6 +20,8 @@ const getPkm = async() => {
         pokeName = pokemon.name;
         pokeId = pokemon.id;
         pokeImg = pokemon.sprites.front_default;
+        const img = document.querySelector("#pkm-img");
+        img.setAttribute("src",pokeImg);
 
         
     }catch(err){
