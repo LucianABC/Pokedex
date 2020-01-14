@@ -52,7 +52,7 @@ submitSearch.addEventListener("click", displayPkm);
 
 //--------------------------- Random pokemon
 const randomize = () => {
-    input.value = Math.floor(Math.random() * 964) + 1;
+    input.value = Math.floor(Math.random() * 807) + 1;
     displayPkm();
 }
 
