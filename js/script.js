@@ -5,12 +5,23 @@ try {
 
 }catch(e){}
 
-const input = document.querySelector("#pkm-search");
+const input = document.querySelector("#pkm-search-input");
+
+let pokeId;
+let pokeName;
+let pokeImg;
+
 
 const getPkm = async() => {
     const id= input.value;
     try {
-        const pokemon = await axios.get(`${baseUrl}/${id}`);
+        let pokemon = await axios.get(`${baseUrl}/${id}`);
+        pokemon = pokemon.data;
+        pokeName = pokemon.name;
+        pokeId = pokemon.id;
+        pokeImg = pokemon.sprites.front_default;
+
+        
     }catch(err){
 
     }
