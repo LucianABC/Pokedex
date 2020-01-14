@@ -3,7 +3,6 @@
 
 body {
     font-family: 'Press Start 2P', cursive;
-    
 }
 
 #navBar {
@@ -13,35 +12,42 @@ body {
 }
 
 .pkdx-section {
+    padding:30px;
     display: flex;
     justify-content: center;
-    background-image: url("../imgs/fondo1.png");
-
-    
+    background-image: url("../imgs/fondo1.png");    
     .pkm-img-card {
         border: 5px solid $yellow-borders;
         border-radius: 10%;
         margin: 10px;
         background-image: url(../imgs/fondo2.png);
+        img{
+            width: 300px;
+            height: 300px;
+        }
     }
-
     .pkm-info-card {
         border-radius: 10%;
         display: flex;
+        box-sizing: border-box;
         flex-direction: column;
+        justify-content: left;
         margin: 10px;
         background-color: $yellow-background;
         color: $card-text;
-        padding: 10px;
+        padding: 20px;
+        height: 150px;
+        width: 400px;
+        font-size: 17px;
         span {
-            margin: 10px;
+            margin: 5px;
         }
         div {
-            margin: 10px;
-
+            margin: 5px;
+            display:flex;
             span {
-                border-radius: 6px;
-                border: 1px solid $card-text;
+                border-radius: 7px;
+                border: 1.5px solid $card-text;
                 padding: 7px;
                 color: white;
             }

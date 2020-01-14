@@ -89,6 +89,7 @@ body {
 }
 
 .pkdx-section {
+  padding: 30px;
   display: flex;
   justify-content: center;
   background-image: url("../imgs/fondo1.png");
@@ -99,24 +100,34 @@ body {
   margin: 10px;
   background-image: url(../imgs/fondo2.png);
 }
+.pkdx-section .pkm-img-card img {
+  width: 300px;
+  height: 300px;
+}
 .pkdx-section .pkm-info-card {
   border-radius: 10%;
   display: flex;
+  box-sizing: border-box;
   flex-direction: column;
+  justify-content: left;
   margin: 10px;
   background-color: #f9f8c6;
   color: #606060;
-  padding: 10px;
+  padding: 20px;
+  height: 150px;
+  width: 400px;
+  font-size: 17px;
 }
 .pkdx-section .pkm-info-card span {
-  margin: 10px;
+  margin: 5px;
 }
 .pkdx-section .pkm-info-card div {
-  margin: 10px;
+  margin: 5px;
+  display: flex;
 }
 .pkdx-section .pkm-info-card div span {
-  border-radius: 6px;
-  border: 1px solid #606060;
+  border-radius: 7px;
+  border: 1.5px solid #606060;
   padding: 7px;
   color: white;
 }
