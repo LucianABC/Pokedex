@@ -78,31 +78,59 @@
 .type-shadow{
     background-color: $shadow;
 }*/
+html {
+  margin: 0;
+}
+
 body {
   font-family: "Press Start 2P", cursive;
+  margin: 0;
 }
 
 #navBar {
+  padding: 15px;
+  padding-top: 10px;
   display: flex;
+  align-items: center;
   color: white;
   background-color: #2263E8;
+}
+#navBar input {
+  box-sizing: border-box;
+  border-radius: 6px;
+  height: 30px;
+  padding: 3px;
+  padding-left: 6px;
+  font-family: "Press Start 2P", cursive;
+}
+#navBar div {
+  margin: 7px;
+}
+#navBar button {
+  font-family: "Press Start 2P", cursive;
+  box-sizing: border-box;
+  height: 40px;
+  border-radius: 6px;
+  border: none;
 }
 
 .pkdx-section {
   padding: 30px;
   display: flex;
-  justify-content: center;
+  justify-content: left;
   background-image: url("../imgs/fondo1.png");
+  background-size: 50px;
 }
 .pkdx-section .pkm-img-card {
-  border: 5px solid #f9f8a4;
+  border: 10px solid #f9f8a4;
   border-radius: 10%;
   margin: 10px;
   background-image: url(../imgs/fondo2.png);
+  background-size: 50px;
 }
 .pkdx-section .pkm-img-card img {
-  width: 300px;
-  height: 300px;
+  width: 280x;
+  height: 280px;
 }
 .pkdx-section .pkm-info-card {
   border-radius: 10%;
@@ -111,6 +139,7 @@ body {
   flex-direction: column;
   justify-content: left;
   margin: 10px;
+  margin-left: 40px;
   background-color: #f9f8c6;
   color: #606060;
   padding: 20px;
