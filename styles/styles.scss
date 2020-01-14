@@ -1,5 +1,5 @@
 @import 'variables';
-
+@import 'types';
 
 body {
     font-family: 'Press Start 2P', cursive;
@@ -40,11 +40,11 @@ body {
             margin: 10px;
 
             span {
-                border-radius: 10px;
-                border: 1px solid black;
-                margin: 5px;
+                border-radius: 6px;
+                border: 1px solid $card-text;
+                padding: 7px;
+                color: white;
             }
         }
     }
-
 }

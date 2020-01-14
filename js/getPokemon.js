@@ -39,7 +39,7 @@ const displayPkm = async () =>{
     const types = pokemon.types;
     for (let type of types) {
         let span = document.createElement("span");
-        let typeName = capitalizeFirstLetter(type.type.name);
+        let typeName = (type.type.name).toUpperCase();
         span.innerHTML = typeName;
         span.classList.add(`type-${type.type.name}`);
         typesDiv.appendChild(span);
