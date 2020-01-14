@@ -16,19 +16,36 @@ const getPkm = async() => {
     const id= input.value;
     try {
         let pokemon = await axios.get(`${baseUrl}/${id}`);
-        pokemon = pokemon.data;
-        pokeName = pokemon.name;
-        pokeId = pokemon.id;
-        pokeImg = pokemon.sprites.front_default;
-        const img = document.querySelector("#pkm-img");
-        img.setAttribute("src",pokeImg);
-
-        
+        return pokemon.data       
     }catch(err){
-
+        handleError
     }
+}
+
+const displayPkm = async () =>{
+    let pokemon = await getPkm();
+
+    const img = document.querySelector("#pkm-img");
+    img.setAttribute("src", pokemon.sprites.front_default);
+
+    const nameSpan = document.querySelector("#pkm-id-name");
+    nameSpan.innerHTML = `${pokemon.id} - ${pokemon.name}`;
+
+    const mainAbilitySpan = document.querySelector("#pkm-ability");
+    mainAbilitySpan.innerHTML=pokemon.abilities[0].ability.name;
+
+    const typesDiv = document.querySelector("#pkm-types");
+    const types = pokemon.types;
+
+    for (let type of types) {
+        let span = document.createElement("span");
+        span.innerHTML = type.type.name;
+        span.classList.add(`type-${type.type.name}`);
+        typesDiv.appendChild(span);
+    }
+
 }
 
 const submitSearch = document.querySelector("#submit-bttn");
 
-submitSearch.addEventListener("click", getPkm);
+submitSearch.addEventListener("click", displayPkm);
