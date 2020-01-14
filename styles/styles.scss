@@ -14,16 +14,21 @@ body {
 .pkdx-section {
     display: flex;
     justify-content: center;
-    background-color: $skyblue;
-}
-.pkm-img-card {
-    border: 1px solid black;
-    margin: 10px;
+    background-image: url("../imgs/fondo1.png");
 
-}
-.pkm-info-card {
-    border: 1px solid black;
-    display: flex;
-    flex-direction: column;
-    margin: 10px;
+    
+    .pkm-img-card {
+        border: 5px solid $yellow-borders;
+        border-radius: 10%;
+        margin: 10px;
+        background-image: url(../imgs/fondo2.png);
+    }
+
+    .pkm-info-card {
+        border: 1px solid black;
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+    }
+
 }

@@ -16,7 +16,7 @@ const getPkm = async() => {
         let pokemon = await axios.get(`${baseUrl}/${id}`);
         return pokemon.data       
     }catch(err){
-        handleError
+        handleError(err);
     }
 }
 //---------------------- Display in html
@@ -35,6 +35,7 @@ const displayPkm = async () =>{
     mainAbilitySpan.innerHTML=ability;
 
     const typesDiv = document.querySelector("#pkm-types");
+    typesDiv.innerHTML="";
     const types = pokemon.types;
     for (let type of types) {
         let span = document.createElement("span");

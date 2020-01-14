@@ -11,15 +11,15 @@ body {
 .pkdx-section {
   display: flex;
   justify-content: center;
-  background-color: #DEF7F8;
+  background-image: url("../imgs/fondo1.png");
 }
-
-.pkm-img-card {
-  border: 1px solid black;
+.pkdx-section .pkm-img-card {
+  border: 5px solid #f9f8a4;
+  border-radius: 10%;
   margin: 10px;
+  background-image: url(../imgs/fondo2.png);
 }
-
-.pkm-info-card {
+.pkdx-section .pkm-info-card {
   border: 1px solid black;
   display: flex;
   flex-direction: column;
