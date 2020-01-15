@@ -108,7 +108,7 @@ body {
 
 #pkdx-img-section {
   margin-top: 5px;
-  margin-right: 95px;
+  margin-right: 150px;
   margin-left: 75px;
   margin-bottom: 80px;
   box-sizing: border-box;
@@ -171,24 +171,38 @@ body {
 }
 #pkdx-info-section #navBar {
   display: flex;
+  flex-direction: column;
   align-items: center;
   color: white;
   background-color: #2263E8;
   box-sizing: border-box;
+  width: 500px;
+  padding: 10px;
+  border-radius: 5px;
 }
 #pkdx-info-section #navBar input {
   box-sizing: border-box;
   border-radius: 6px;
-  height: 30px;
-  padding: 3px;
-  padding-left: 6px;
+  height: 40px;
+  width: 480px;
+  padding: 6px;
   font-family: "Press Start 2P", cursive;
+  font-size: 16px;
 }
-#pkdx-info-section #navBar div {
+#pkdx-info-section #navBar #buttons-wraper {
+  display: flex;
   margin: 7px;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
 }
-#pkdx-info-section #navBar button {
+#pkdx-info-section #navBar #buttons-wraper button {
+  color: #606060;
+  box-sizing: border-box;
+  margin: 5px;
   font-family: "Press Start 2P", cursive;
+  font-size: 22px;
+  width: 50%;
   box-sizing: border-box;
   height: 40px;
   border-radius: 6px;

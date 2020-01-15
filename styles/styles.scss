@@ -31,7 +31,7 @@ body {
 
 #pkdx-img-section {
     margin-top: 5px;
-    margin-right: 95px;
+    margin-right: 150px;
     margin-left: 75px;
     margin-bottom: 80px;
     box-sizing: border-box;
@@ -99,30 +99,42 @@ body {
 
     #navBar {
         display: flex;
+        flex-direction: column;
         align-items: center;
         color: white;
         background-color: $fondonav;
         box-sizing: border-box;
-
+        width: 500px;
+        padding:10px;
+        border-radius: 5px;
         input {
             box-sizing: border-box;
             border-radius: 6px;
-            height: 30px ;
-            padding: 3px;
-            padding-left: 6px;
+            height: 40px ;
+            width:480px;
+            padding: 6px;
             font-family: 'Press Start 2P', cursive;
+            font-size: 16px;
         }
 
-        div {
+        #buttons-wraper {
+            display: flex;
             margin: 7px;
-        }
-        button {
-            font-family: 'Press Start 2P', cursive;
-            
+            width: 100%;
+            padding:10px;
             box-sizing: border-box;
-            height: 40px;
-            border-radius: 6px;
-            border:none;
+            button {
+                color: $card-text;
+                box-sizing: border-box;
+                margin:5px;
+                font-family: 'Press Start 2P', cursive;
+                font-size: 22px;
+                width: 50%;
+                box-sizing: border-box;
+                height: 40px;
+                border-radius: 6px;
+                border:none;
+            }
         }
     }
 
