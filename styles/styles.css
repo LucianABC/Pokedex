@@ -114,7 +114,7 @@ body {
   box-sizing: border-box;
   margin: 5px;
   font-family: "Press Start 2P", cursive;
-  font-size: 22px;
+  font-size: 14px;
   border-radius: 6px;
   border: none;
   cursor: pointer;
@@ -125,19 +125,19 @@ body {
   background-image: url("../imgs/pokedex.png");
   background-repeat: no-repeat;
   box-sizing: border-box;
-  width: 1346px;
-  height: 981px;
+  width: 942px;
+  height: 687px;
   display: flex;
-  padding-bottom: 80px;
-  padding-left: 63px;
-  padding-right: 30px;
-  padding-top: 240px;
+  padding-bottom: 56px;
+  padding-left: 44px;
+  padding-right: 21px;
+  padding-top: 178px;
   box-shadow: -10px 10px 9px -5px black;
   border-radius: 13px;
 }
 .pokedex .pkdx-section {
-  width: 573px;
-  margin: 25px;
+  width: 50%;
+  margin: 17.5px;
 }
 
 #pkdx-img-section {
@@ -146,10 +146,10 @@ body {
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
-  margin-top: 10px;
-  margin-right: 155px;
-  margin-left: 30px;
-  margin-bottom: 90px;
+  margin-top: 7px;
+  margin-right: 108.5px;
+  margin-left: 21px;
+  margin-bottom: 63px;
   border-radius: 7px;
   box-shadow: inset -10px 10px 5px 0px rgba(0, 0, 0, 0.28);
   background-image: url("../imgs/fondo1.png");
@@ -158,14 +158,14 @@ body {
 #pkdx-img-section .pkm-img-card {
   border: 10px solid #f9f8a4;
   border-radius: 10%;
-  margin: 10px;
+  margin: 7px;
   background-image: url(../imgs/fondo2.png);
   background-size: 50px;
   box-shadow: 0px 0px 10px 4px rgba(99, 99, 99, 0.18);
 }
 #pkdx-img-section .pkm-img-card img {
-  width: 280x;
-  height: 280px;
+  width: 196px;
+  height: 196px;
 }
 
 #pkdx-info-section {
@@ -173,7 +173,7 @@ body {
   flex-direction: column;
   align-items: center;
   box-sizing: border-box;
-  margin-top: 40px;
+  margin-top: 28px;
   padding: 0;
 }
 #pkdx-info-section .pkm-info-card {
@@ -183,13 +183,13 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 10px;
+  margin: 7px;
   background-color: #0C1A57;
   color: white;
-  padding: 20px;
-  height: 150px;
-  width: 500px;
-  font-size: 22px;
+  padding: 14px;
+  height: 105px;
+  width: 350px;
+  font-size: 12px;
   box-shadow: inset -10px 10px 5px 0px rgba(0, 0, 0, 0.75);
 }
 #pkdx-info-section .pkm-info-card span {
@@ -218,8 +218,8 @@ body {
   color: white;
   background-color: #02aaf7;
   box-sizing: border-box;
-  width: 500px;
-  padding: 20px;
+  width: 350px;
+  padding: 14px;
   border-radius: 6px;
   box-shadow: inset 0px 15px 5px -6px #3bcef8;
   box-shadow: 0px 0px 9px 0px #0478d1;
@@ -227,22 +227,22 @@ body {
 #pkdx-info-section #search-bar input {
   box-sizing: border-box;
   border-radius: 6px;
-  height: 40px;
-  width: 480px;
+  height: 28px;
+  width: 330px;
   padding: 6px;
   font-family: "Press Start 2P", cursive;
   font-size: 16px;
 }
 #pkdx-info-section #search-bar #buttons-wraper {
   display: flex;
-  margin: 7px;
+  margin: 5px;
   width: 100%;
-  padding: 10px;
+  padding: 7px;
   box-sizing: border-box;
 }
 #pkdx-info-section #search-bar #buttons-wraper button {
   width: 50%;
-  height: 40px;
+  height: 28px;
   box-shadow: 6px 6px 3px 0px #0398d2;
 }
 #pkdx-info-section #search-bar #buttons-wraper button:active {
@@ -253,14 +253,14 @@ body {
 #pkdx-info-section #nav-bar {
   display: flex;
   width: 100%;
-  padding: 10px;
-  margin: 7px;
-  margin-top: 40px;
+  padding: 7px;
+  margin: 5px;
+  margin-top: 28px;
 }
 #pkdx-info-section #nav-bar button {
   background-color: white;
   width: 30%;
-  height: 50px;
+  height: 35px;
   box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
 }
 #pkdx-info-section #nav-bar button:active {
@@ -269,7 +269,7 @@ body {
   border: none;
 }
 #pkdx-info-section #nav-bar button .fas {
-  font-size: 30px;
+  font-size: 21px;
   color: #606060;
 }
 
