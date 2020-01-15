@@ -138,24 +138,26 @@ body {
   align-items: center;
   box-sizing: border-box;
   margin-top: 40px;
-  padding: 20;
+  padding: 0;
 }
 #pkdx-info-section .pkm-info-card {
   border-radius: 15px;
   display: flex;
   box-sizing: border-box;
   flex-direction: column;
-  justify-content: left;
+  justify-content: center;
+  align-items: center;
   margin: 10px;
   background-color: #f9f8c6;
   color: #606060;
   padding: 20px;
   height: 150px;
-  width: 400px;
-  font-size: 17px;
+  width: 500px;
+  font-size: 22px;
 }
 #pkdx-info-section .pkm-info-card span {
   margin: 5px;
+  text-align: center;
 }
 #pkdx-info-section .pkm-info-card div {
   margin: 5px;
