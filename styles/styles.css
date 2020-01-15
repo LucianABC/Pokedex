@@ -117,6 +117,7 @@ body {
   font-size: 22px;
   border-radius: 6px;
   border: none;
+  cursor: pointer;
 }
 
 .pokedex {
@@ -244,6 +245,11 @@ body {
   height: 40px;
   box-shadow: 6px 6px 3px 0px #0398d2;
 }
+#pkdx-info-section #search-bar #buttons-wraper button:active {
+  box-shadow: inset 5px 5px 5px 0px #707070;
+  transform: translateY(4px);
+  border: none;
+}
 #pkdx-info-section #nav-bar {
   display: flex;
   width: 100%;
@@ -256,6 +262,11 @@ body {
   width: 30%;
   height: 50px;
   box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+}
+#pkdx-info-section #nav-bar button:active {
+  box-shadow: inset 5px 5px 5px 0px #707070;
+  transform: translateY(4px);
+  border: none;
 }
 #pkdx-info-section #nav-bar button .fas {
   font-size: 30px;
