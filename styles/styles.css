@@ -87,6 +87,17 @@ body {
   margin: 0;
 }
 
+.pokedex {
+  background-image: url("../imgs/flat,750x,075,f-pad,750x1000,f8f8f8.u2.jpg");
+  background-repeat: no-repeat;
+  padding-top: 250px;
+  padding-left: 145px;
+  box-sizing: border-box;
+  width: 673px;
+  height: 981px;
+  display: flex;
+}
+
 #navBar {
   padding: 15px;
   padding-top: 10px;
@@ -115,9 +126,14 @@ body {
 }
 
 .pkdx-section {
-  padding: 30px;
+  box-sizing: border-box;
+  width: 450px;
+  height: 555px;
+  padding-top: 10px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   background-image: url("../imgs/fondo1.png");
   background-size: 50px;
 }
@@ -139,7 +155,6 @@ body {
   flex-direction: column;
   justify-content: left;
   margin: 10px;
-  margin-left: 40px;
   background-color: #f9f8c6;
   color: #606060;
   padding: 20px;

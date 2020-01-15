@@ -1,7 +1,9 @@
 const baseUrl = "https://pokeapi.co/api/v2/pokemon";
+
 const handleError = err =>{
-    alert(`Hubo un error. ${err}`);
+    alert(`3Hubo un error. ${err}`);
 };
+
 const pokemonList = [];
 
 const capitalizeFirstLetter = (string) => {
