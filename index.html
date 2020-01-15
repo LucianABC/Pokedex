@@ -11,34 +11,39 @@
 </head>
 <body>
     <section class="pokedex">
-        <section class="pkdx-section">
+        <section class="pkdx-img-section">
             <div class="pkm-img-card">
                 <img id="pkm-img">
             </div>
+        </section> 
+        <section class="pkdx-info-section">         
             <div class="pkm-info-card">
                 <span id="pkm-id-name"></span>
                 <span id="pkm-ability"> </span>
                 <div id="pkm-types"></div>
             </div>
-        </section>    
+            <nav id="navBar">
+                <div>
+                    <h1>INFO</h1>
+                </div>
+                <div>
+                    <input type="text" placeholder="Pokemon/PokeID" id="pkm-search-input">
+                </div>
+                <div>
+                    <button id="submit-bttn">GO!</button>
+                </div>
+                <div>
+                    <button id="random-bttn">Random</button>
+                </div>
+            </nav>
+           
+        </section>
+
     </section>
+    
     <!---
     <section class ="all">
-        <nav id="navBar">
-            <div>
-                <h1>INFO</h1>
-            </div>
-            <div>
-                <input type="text" placeholder="Pokemon/PokeID" id="pkm-search-input">
-            </div>
-            <div>
-                <button id="submit-bttn">GO!</button>
-            </div>
-            <div>
-                <button id="random-bttn">Random</button>
-            </div>
-        </nav>
-        
+       
     </section> -->
     <script src="./js/constantes.js"></script>
     <script src="./js/getPokemon.js"></script>

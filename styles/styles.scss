@@ -23,38 +23,7 @@ body {
 
 
 
-
-#navBar {
-    padding: 15px;
-    padding-top: 10px;
-    display: flex;
-    align-items: center;
-    color: white;
-    background-color: $fondonav;
-
-    input {
-        box-sizing: border-box;
-        border-radius: 6px;
-        height: 30px ;
-        padding: 3px;
-        padding-left: 6px;
-        font-family: 'Press Start 2P', cursive;
-    }
-
-    div {
-        margin: 7px;
-    }
-    button {
-        font-family: 'Press Start 2P', cursive;
-        
-        box-sizing: border-box;
-        height: 40px;
-        border-radius: 6px;
-        border:none;
-    }
-}
-
-.pkdx-section {
+.pkdx-img-section {
     box-sizing: border-box;
     width: 450px;
     height: 555px;
@@ -76,6 +45,23 @@ body {
             height: 280px;
         }
     }
+}
+
+
+
+.pkdx-info-section {
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    margin-left: 100px;
+    padding-left: 40px;
+    padding-top: 30px;
+    padding-right: 40px;
+    margin-right: 10px;
+
+    
     .pkm-info-card {
         border-radius: 10%;
         display: flex;
@@ -104,4 +90,37 @@ body {
             }
         }
     }
+
+    
+
+    #navBar {
+        padding: 15px;
+        padding-top: 10px;
+        display: flex;
+        align-items: center;
+        color: white;
+        background-color: $fondonav;
+
+        input {
+            box-sizing: border-box;
+            border-radius: 6px;
+            height: 30px ;
+            padding: 3px;
+            padding-left: 6px;
+            font-family: 'Press Start 2P', cursive;
+        }
+
+        div {
+            margin: 7px;
+        }
+        button {
+            font-family: 'Press Start 2P', cursive;
+            
+            box-sizing: border-box;
+            height: 40px;
+            border-radius: 6px;
+            border:none;
+        }
+    }
+
 }

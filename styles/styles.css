@@ -98,34 +98,7 @@ body {
   display: flex;
 }
 
-#navBar {
-  padding: 15px;
-  padding-top: 10px;
-  display: flex;
-  align-items: center;
-  color: white;
-  background-color: #2263E8;
-}
-#navBar input {
-  box-sizing: border-box;
-  border-radius: 6px;
-  height: 30px;
-  padding: 3px;
-  padding-left: 6px;
-  font-family: "Press Start 2P", cursive;
-}
-#navBar div {
-  margin: 7px;
-}
-#navBar button {
-  font-family: "Press Start 2P", cursive;
-  box-sizing: border-box;
-  height: 40px;
-  border-radius: 6px;
-  border: none;
-}
-
-.pkdx-section {
+.pkdx-img-section {
   box-sizing: border-box;
   width: 450px;
   height: 555px;
@@ -137,18 +110,31 @@ body {
   background-image: url("../imgs/fondo1.png");
   background-size: 50px;
 }
-.pkdx-section .pkm-img-card {
+.pkdx-img-section .pkm-img-card {
   border: 10px solid #f9f8a4;
   border-radius: 10%;
   margin: 10px;
   background-image: url(../imgs/fondo2.png);
   background-size: 50px;
 }
-.pkdx-section .pkm-img-card img {
+.pkdx-img-section .pkm-img-card img {
   width: 280x;
   height: 280px;
 }
-.pkdx-section .pkm-info-card {
+
+.pkdx-info-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  margin-left: 100px;
+  padding-left: 40px;
+  padding-top: 30px;
+  padding-right: 40px;
+  margin-right: 10px;
+}
+.pkdx-info-section .pkm-info-card {
   border-radius: 10%;
   display: flex;
   box-sizing: border-box;
@@ -162,18 +148,44 @@ body {
   width: 400px;
   font-size: 17px;
 }
-.pkdx-section .pkm-info-card span {
+.pkdx-info-section .pkm-info-card span {
   margin: 5px;
 }
-.pkdx-section .pkm-info-card div {
+.pkdx-info-section .pkm-info-card div {
   margin: 5px;
   display: flex;
 }
-.pkdx-section .pkm-info-card div span {
+.pkdx-info-section .pkm-info-card div span {
   border-radius: 7px;
   border: 1.5px solid #606060;
   padding: 7px;
   color: white;
+}
+.pkdx-info-section #navBar {
+  padding: 15px;
+  padding-top: 10px;
+  display: flex;
+  align-items: center;
+  color: white;
+  background-color: #2263E8;
+}
+.pkdx-info-section #navBar input {
+  box-sizing: border-box;
+  border-radius: 6px;
+  height: 30px;
+  padding: 3px;
+  padding-left: 6px;
+  font-family: "Press Start 2P", cursive;
+}
+.pkdx-info-section #navBar div {
+  margin: 7px;
+}
+.pkdx-info-section #navBar button {
+  font-family: "Press Start 2P", cursive;
+  box-sizing: border-box;
+  height: 40px;
+  border-radius: 6px;
+  border: none;
 }
 
 /*# sourceMappingURL=styles.css.map */
