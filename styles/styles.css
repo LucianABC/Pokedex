@@ -109,6 +109,16 @@ body {
   background-color: #262626;
 }
 
+.main-bttn {
+  color: #606060;
+  box-sizing: border-box;
+  margin: 5px;
+  font-family: "Press Start 2P", cursive;
+  font-size: 22px;
+  border-radius: 6px;
+  border: none;
+}
+
 .pokedex {
   margin: 20px;
   background-image: url("../imgs/pokedex.png");
@@ -130,19 +140,19 @@ body {
 }
 
 #pkdx-img-section {
-  margin-top: 10px;
-  margin-right: 155px;
-  margin-left: 30px;
-  margin-bottom: 90px;
-  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url("../imgs/fondo1.png");
-  background-size: 50px;
+  box-sizing: border-box;
+  margin-top: 10px;
+  margin-right: 155px;
+  margin-left: 30px;
+  margin-bottom: 90px;
   border-radius: 7px;
   box-shadow: inset -10px 10px 5px 0px rgba(0, 0, 0, 0.28);
+  background-image: url("../imgs/fondo1.png");
+  background-size: 50px;
 }
 #pkdx-img-section .pkm-img-card {
   border: 10px solid #f9f8a4;
@@ -230,16 +240,8 @@ body {
   box-sizing: border-box;
 }
 #pkdx-info-section #search-bar #buttons-wraper button {
-  color: #606060;
-  box-sizing: border-box;
-  margin: 5px;
-  font-family: "Press Start 2P", cursive;
-  font-size: 22px;
   width: 50%;
-  box-sizing: border-box;
   height: 40px;
-  border-radius: 6px;
-  border: none;
   box-shadow: 6px 6px 3px 0px #0398d2;
 }
 #pkdx-info-section #nav-bar {
@@ -251,16 +253,8 @@ body {
 }
 #pkdx-info-section #nav-bar button {
   background-color: white;
-  color: #606060;
-  box-sizing: border-box;
-  margin: 5px;
-  font-family: "Press Start 2P", cursive;
-  font-size: 22px;
   width: 30%;
-  box-sizing: border-box;
   height: 50px;
-  border-radius: 6px;
-  border: none;
   box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
 }
 #pkdx-info-section #nav-bar button .fas {

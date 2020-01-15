@@ -11,6 +11,16 @@ body {
     justify-content: center;
     background-color: $background;
 }
+.main-bttn {      
+    color: $card-text;
+    box-sizing: border-box;
+    margin:5px;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 22px;
+    border-radius: 6px;
+    border:none;
+    
+}
 
 .pokedex {
     margin: 20px;
@@ -34,21 +44,20 @@ body {
 }
 
 #pkdx-img-section {
-    margin-top: 10px;
-    margin-right: 155px;
-    margin-left:30px;
-    margin-bottom: 90px;
-    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    box-sizing: border-box;
+    margin-top: 10px;
+    margin-right: 155px;
+    margin-left:30px;
+    margin-bottom: 90px;
+    border-radius: 7px;  
+    box-shadow: inset -10px 10px 5px 0px rgba(0, 0, 0, 0.28);
     background-image: url("../imgs/fondo1.png");
     background-size: 50px;  
-    border-radius: 7px;  
-    //box-shadow: inset 0px 0px 10px 4px rgba(99,99,99,1);
-    box-shadow: inset -10px 10px 5px 0px rgba(0, 0, 0, 0.28);
-
+  
     
 
     .pkm-img-card {
@@ -139,16 +148,8 @@ body {
             padding:10px;
             box-sizing: border-box;
             button {
-                color: $card-text;
-                box-sizing: border-box;
-                margin:5px;
-                font-family: 'Press Start 2P', cursive;
-                font-size: 22px;
                 width: 50%;
-                box-sizing: border-box;
                 height: 40px;
-                border-radius: 6px;
-                border:none;
                 box-shadow:6px 6px 3px 0px $shadow-nav;
             }
         }
@@ -162,16 +163,8 @@ body {
         margin-top:40px;
         button {
             background-color: white;            
-            color: $card-text;
-            box-sizing: border-box;
-            margin:5px;
-            font-family: 'Press Start 2P', cursive;
-            font-size: 22px;
             width: 30%;
-            box-sizing: border-box;
             height: 50px;
-            border-radius: 6px;
-            border:none;
             box-shadow:5px 5px 5px 0px rgba(0,0,0,0.75);
             .fas{
                 font-size:30px;
