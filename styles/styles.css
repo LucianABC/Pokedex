@@ -137,7 +137,8 @@ body {
   align-items: center;
   background-image: url("../imgs/fondo1.png");
   background-size: 50px;
-  border-radius: 5px;
+  border-radius: 6px;
+  box-shadow: inset -10px 10px 5px 0px rgba(0, 0, 0, 0.28);
 }
 #pkdx-img-section .pkm-img-card {
   border: 10px solid #f9f8a4;
@@ -145,6 +146,7 @@ body {
   margin: 10px;
   background-image: url(../imgs/fondo2.png);
   background-size: 50px;
+  box-shadow: 0px 0px 10px 4px rgba(99, 99, 99, 0.18);
 }
 #pkdx-img-section .pkm-img-card img {
   width: 280x;
@@ -173,6 +175,7 @@ body {
   height: 150px;
   width: 500px;
   font-size: 22px;
+  box-shadow: inset -10px 10px 5px 0px rgba(0, 0, 0, 0.75);
 }
 #pkdx-info-section .pkm-info-card span {
   margin: 5px;
@@ -198,11 +201,13 @@ body {
   align-items: center;
   justify-content: center;
   color: white;
-  background-color: #2263E8;
+  background-color: #02aaf7;
   box-sizing: border-box;
   width: 500px;
-  padding: 10px;
-  border-radius: 5px;
+  padding: 20px;
+  border-radius: 6px;
+  box-shadow: inset 0px 15px 5px -6px #3bcef8;
+  box-shadow: 0px 0px 9px 0px #0478d1;
 }
 #pkdx-info-section #search-bar input {
   box-sizing: border-box;
@@ -231,6 +236,7 @@ body {
   height: 40px;
   border-radius: 6px;
   border: none;
+  box-shadow: 6px 6px 3px 0px #0398d2;
 }
 #pkdx-info-section #nav-bar {
   display: flex;
@@ -251,6 +257,7 @@ body {
   height: 50px;
   border-radius: 6px;
   border: none;
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
 }
 #pkdx-info-section #nav-bar button .fas {
   font-size: 30px;
