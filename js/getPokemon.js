@@ -7,6 +7,7 @@ try {
 }catch(e){}
 
 const input = document.querySelector("#pkm-search-input");
+let currentPkm;
 //-------------------- Get pokemon from API
 const getPkm = async() => {
     let id= input.value;
@@ -14,6 +15,7 @@ const getPkm = async() => {
 
     try {
         let pokemon = await axios.get(`${baseUrl}/${id}`);
+        currentPkm = pokemon.data.id;
         return pokemon.data       
     }catch(err){
         handleError(err);
@@ -64,6 +66,7 @@ randomize();
 try {
     module.exports = {
         displayPkm,
-        input
+        input,
+        currentPkm
     }
 }catch(err){}
