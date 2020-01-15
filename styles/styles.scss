@@ -9,10 +9,12 @@ body {
     margin: 0;
     display: flex;
     justify-content: center;
+    background-color: $background;
 }
 
 .pokedex {
-    background-image: url('../imgs/flat\,750x\,075\,f-pad\,750x1000\,f8f8f8.u2.jpg');
+    margin: 20px;
+    background-image: url('../imgs/pokedex.png');
     background-repeat: no-repeat;
     box-sizing: border-box;
     width: 1346px;
@@ -22,6 +24,8 @@ body {
     padding-left: 63px;
     padding-right:30px;
     padding-top: 240px;
+    box-shadow: -10px 10px 9px -5px rgba(0,0,0,1);
+    border-radius: 13px;
 
     .pkdx-section {
         width: 573px;
