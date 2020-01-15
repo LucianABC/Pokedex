@@ -72,9 +72,8 @@ body {
         justify-content: center;
         align-items: center;
         margin: 10px;
-        
-        background-color: $yellow-background;
-        color: $card-text;
+        background-color: $infoscreen-background;
+        color: white;
         padding: 20px;
         height: 150px;
         width: 500px;
@@ -82,14 +81,18 @@ body {
         span {
             margin: 5px;
             text-align: center;
-        }
+        } 
         div {
             margin: 5px;
             display:flex;
+            color: $card-text;
             span {
                 border-radius: 7px;
                 border: 1.5px solid $card-text;
                 padding: 7px;
+                color: $yellow-borders;
+            }
+            #pkm-id-name #pkm-ability {
                 color: white;
             }
         }
