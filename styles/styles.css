@@ -169,10 +169,11 @@ body {
   padding: 7px;
   color: white;
 }
-#pkdx-info-section #navBar {
+#pkdx-info-section #search-bar {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   color: white;
   background-color: #2263E8;
   box-sizing: border-box;
@@ -180,7 +181,7 @@ body {
   padding: 10px;
   border-radius: 5px;
 }
-#pkdx-info-section #navBar input {
+#pkdx-info-section #search-bar input {
   box-sizing: border-box;
   border-radius: 6px;
   height: 40px;
@@ -189,14 +190,14 @@ body {
   font-family: "Press Start 2P", cursive;
   font-size: 16px;
 }
-#pkdx-info-section #navBar #buttons-wraper {
+#pkdx-info-section #search-bar #buttons-wraper {
   display: flex;
   margin: 7px;
   width: 100%;
   padding: 10px;
   box-sizing: border-box;
 }
-#pkdx-info-section #navBar #buttons-wraper button {
+#pkdx-info-section #search-bar #buttons-wraper button {
   color: #606060;
   box-sizing: border-box;
   margin: 5px;
@@ -207,6 +208,30 @@ body {
   height: 40px;
   border-radius: 6px;
   border: none;
+}
+#pkdx-info-section #nav-bar {
+  display: flex;
+  width: 100%;
+  padding: 10px;
+  margin: 7px;
+  margin-top: 40px;
+}
+#pkdx-info-section #nav-bar button {
+  background-color: white;
+  color: #606060;
+  box-sizing: border-box;
+  margin: 5px;
+  font-family: "Press Start 2P", cursive;
+  font-size: 22px;
+  width: 30%;
+  box-sizing: border-box;
+  height: 50px;
+  border-radius: 6px;
+  border: none;
+}
+#pkdx-info-section #nav-bar button .fas {
+  font-size: 30px;
+  color: #606060;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -7,6 +7,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js" integrity="sha256-S1J4GVHHDMiirir9qsXWc8ZWw74PHHafpsHp5PXtjTs=" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
     <link href="styles/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+
     <title>Pokèdex</title>
 </head>
 <body>
@@ -22,7 +24,7 @@
                 <span id="pkm-ability"> </span>
                 <div id="pkm-types"></div>
             </div>
-            <nav id="navBar">
+            <div id="search-bar">
                <div>
                     <input type="text" placeholder="Pokemon/PokeID" id="pkm-search-input">
                 </div>
@@ -30,7 +32,15 @@
                     <button id="submit-bttn">GO!</button>
                     <button id="random-bttn">Random</button>
                 </div>
-            </nav>
+            </div>
+            <div id="nav-bar">
+                <button id="previous-pkm">
+                    <i class="fas fa-angle-left"></i>
+                </button>
+                <button id="next-pkm">
+                    <i class="fas fa-angle-right"></i>
+                </button>
+            </div>
            
         </section>
 
